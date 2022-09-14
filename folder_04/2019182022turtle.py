@@ -1,5 +1,9 @@
 import turtle
 
+turtle.penup()
+turtle.goto(-250, 250)
+turtle.pendown()
+
 count = 5
 
 while count > 0:
