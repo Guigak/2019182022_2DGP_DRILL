@@ -13,7 +13,7 @@ frame = 0
 def handle_events():
     # fill here
 
-    # global running
+    global running
     events = get_events()
     for event in events:
         if event.type == SDL_QUIT:
