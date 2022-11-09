@@ -118,7 +118,7 @@ def run(start_state):
 
         global frame_time
         frame_time = time.time() - current_time
-        frame_rate = 1.0 / frame_time
+        # frame_rate = 1.0 / frame_time
         current_time += frame_time
         # print(f'Frame Time : {frame_time}, Frame Rate : {frame_rate}')
 

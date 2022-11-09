@@ -35,7 +35,7 @@ class IDLE:
 
     @staticmethod
     def do(self):
-        self.frame = (self.frame + FRAMES_PER_ACTION * ACTION_PER_TIME * game_framework.frame_time) % 8
+        self.frame = (self.frame + 1) % 8
         self.timer -= 1
         if self.timer == 0:
             self.add_event(TIMER)
