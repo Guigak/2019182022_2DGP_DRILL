@@ -78,6 +78,9 @@ class InfiniteBackground:
         self.w = self.image.w
         self.h = self.image.h
 
+        self.window_left = 500
+        self.window_bottom = 500
+
 
 
     def draw(self):

@@ -15,7 +15,7 @@ class FixedBackground:
 
     def draw(self):
         self.image.clip_draw_to_origin(self.window_left, self.window_bottom,\
-                                        self.canvas_width, self.canvas_height,\
+                                        100, 100,\
                                         0, 0)
         # fill here
         pass
