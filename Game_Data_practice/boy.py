@@ -130,10 +130,17 @@ class Boy:
 
 
     def __getstate__(self):
+        # 피클링 할 데이터를 선택해서 딕셔너리로 전달해줌
         # fill here
-        pass
+        state = {'x' : self.x, 'y' : self.y, 'dir' : self.dir, 'cur_state' : self.cur_state}
+        
+        return state
+
     def __setstate__(self, state):
         # fill here
+        self.__init__() # 강제로 생성자를 호출해서 일단은 전체 속성을 다 확보한다.
+        # 업데이트를 통해서 속성값을 복구한 값으로 변경한다
+        self.__dict__.update(state)
         pass
 
     def get_bb(self):
